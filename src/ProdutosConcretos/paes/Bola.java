@@ -1,10 +1,16 @@
 package ProdutosConcretos.paes;
 
-import Criadores.paes.Pao;
 
-public class Bola extends Pao {
+import produtos.Pao;
 
+public class Bola implements Pao {
+    String nome;
     public Bola(String nome){
-        super(nome);
+        this.nome = nome;
+    }
+
+    @Override
+    public String getNome() {
+        return this.nome;
     }
 }

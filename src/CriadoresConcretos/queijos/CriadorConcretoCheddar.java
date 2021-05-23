@@ -7,7 +7,7 @@ import ProdutosConcretos.queijos.Cheddar;
 
 public class CriadorConcretoCheddar extends FactoryQueijo {
     @Override
-    public Queijo createQueijo() {
-        return new Cheddar();
+    public Queijo createQueijo(String nome) {
+        return new Cheddar(nome);
     }
 }

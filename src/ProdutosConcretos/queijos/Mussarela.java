@@ -1,6 +1,20 @@
 package ProdutosConcretos.queijos;
 
-import Criadores.queijos.Queijo;
 
-public class Mussarela extends Queijo {
+import produtos.Queijo;
+
+public class Mussarela implements Queijo {
+    String nome;
+    public Mussarela(String nome){
+      this.nome = nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    @Override
+    public String getNome() {
+        return this.nome;
+    }
 }

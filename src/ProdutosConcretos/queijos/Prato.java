@@ -1,6 +1,20 @@
 package ProdutosConcretos.queijos;
 
-import Criadores.queijos.Queijo;
 
-public class Prato extends Queijo {
+import produtos.Queijo;
+
+public class Prato implements Queijo {
+    String nome;
+    public Prato(String nome){
+        this.nome = nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    @Override
+    public String getNome() {
+        return this.nome;
+    }
 }

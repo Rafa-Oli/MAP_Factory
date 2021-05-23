@@ -1,11 +1,16 @@
 package ProdutosConcretos.paes;
 
-import Criadores.paes.Pao;
 
-public class Integral extends Pao {
+import produtos.Pao;
 
+public class Integral implements Pao {
+    String nome;
     public Integral(String nome){
-        super(nome);
+        this.nome = nome;
     }
 
+    @Override
+    public String getNome() {
+        return this.nome;
+    }
 }

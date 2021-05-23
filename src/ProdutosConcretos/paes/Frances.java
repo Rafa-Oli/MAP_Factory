@@ -1,10 +1,16 @@
 package ProdutosConcretos.paes;
 
-import Criadores.paes.Pao;
 
-public class Frances extends Pao {
+import produtos.Pao;
 
+public class Frances implements Pao {
+    String nome;
     public Frances(String nome){
-        super(nome);
+        this.nome = nome;
+    }
+
+    @Override
+    public String getNome() {
+        return this.nome;
     }
 }

@@ -1,6 +1,15 @@
 package ProdutosConcretos.queijos;
 
-import Criadores.queijos.Queijo;
 
-public class Cheddar extends Queijo {
+import produtos.Queijo;
+
+public class Cheddar implements Queijo {
+    String nome;
+    public Cheddar(String nome){
+        this.nome = nome;
+    }
+    @Override
+    public String getNome() {
+        return this.nome;
+    }
 }
